@@ -1,7 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protected Homepage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <div id="login">
+        <h2>Please enter the password</h2>
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="checkPassword()">Submit</button>
+        <p id="error-message" style="color: red; display: none;">Incorrect password, please try again.</p>
+    </div>
+    <div id="content" style="display: none;">
+        <h1>Welcome to the Protected Homepage</h1>
+        <p>This is the protected content of the homepage.</p>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
